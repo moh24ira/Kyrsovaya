@@ -1,0 +1,8 @@
+me.Temp=parseFloat(Temp);
+if (me.Temp > 0){
+    me.Indicator = (me.Temp*128)/125; // 0 - 128
+}
+else{
+    me.Indicator = 0;
+}
+result={Temp:me.Temp,Indicator:me.Indicator};
